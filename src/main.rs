@@ -23,7 +23,9 @@ use serenity::all::Ready;
 use serenity::async_trait;
 use serenity::prelude::*;
 
-pub struct ConfigData;
+pub struct ConfigData {
+    pub responses: Vec<String>
+}
 
 impl TypeMapKey for ConfigData {
     type Value = Config;
@@ -91,6 +93,8 @@ async fn main() {
         commands::yarn::yarn(),
         commands::yarn::cache_status(),
         commands::shortcut::modrinth(),
+        commands::whenupdate::whenupdate(),
+        commands::whycrash::whycrash(),
     ];
     commands.append(&mut commands::tags::load_tag_commands());
 
@@ -107,13 +111,24 @@ async fn main() {
     let config: Config =
         toml::from_str(&fs::read_to_string("config.toml").expect("reading config"))
             .expect("parsing config");
+    let data: ConfigData = {
+        let lines = &fs::read_to_string("responses/crashes.json5")
+            .ok()
+            .and_then(|it| {
+                json5::from_str::<Vec<String>>(&it).ok()
+            })
+            .unwrap_or_else(Vec::new);
+        ConfigData {
+            responses: lines.to_vec()
+        }
+    };
 
     let framework = poise::Framework::builder()
         .setup(move |ctx, _ready, framework| {
             Box::pin(async move {
                 println!("Registering commands");
                 poise::builtins::register_globally(ctx, &framework.options().commands).await?;
-                Ok(ConfigData {})
+                Ok(data)
             })
         })
         .options(poise_options)

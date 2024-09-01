@@ -1,5 +1,0 @@
-regexes = ["requires any version between .+ and .+ of cicada, which is missing!"]
-severity = "High"
-title = "Issue: CICADA missing"
-response = """General library for most of my mods is required but missing.
-Solution: See `/cicada` command."""

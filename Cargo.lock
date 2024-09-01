@@ -1037,6 +1037,7 @@ dependencies = [
  "json5",
  "number_prefix",
  "poise",
+ "rand",
  "regex",
  "reqwest 0.12.4",
  "serde",

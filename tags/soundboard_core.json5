@@ -1,0 +1,5 @@
+{
+  "title": "Missing mod \"Soundboard Core\"",
+  "description": "Soundboard Core is the module shared by both Soundboard addons.\nIf you're getting this error, make sure you have the same version of both addons.",
+  "color": 0x7d2829,
+}

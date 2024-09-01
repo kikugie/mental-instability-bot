@@ -1,0 +1,6 @@
+{
+  "title": "Lunar Client issues",
+  "description": "Lunar Client doesn't support most mods, and unfortunately this isn't something mod developers can fix.\n\nAs an alternative consider using [Modrinth](https://modrinth.com/app) or [Prism](https://prismlauncher.org/) launcher, which are oriented towards modded Minecraft.",
+  "color": 0x7d2829,
+  "thumbnail": "https://cdn.discordapp.com/attachments/1136033287089950801/1279757657581944892/0X4AAAAAAA.png"
+}
