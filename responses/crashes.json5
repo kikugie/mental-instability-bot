@@ -34,5 +34,9 @@
   "EA bought all mod loaders - now you have to pay 1ⓒ per mod.",
   "Minecraft confused `class_1743` with `class_1748`.",
   "Sodium was too fast; your GPU couldn't keep up.",
-  "Fractureisers 4 and 5 couldn't agree on which one should load."
+  "Fractureisers 4 and 5 couldn't agree on which one should load.",
+  "One of your mods was built for Minecraft 1.23 in advance. Please wait for the update.",
+  "Your mods were too polite and let each other go first – no one loaded.",
+  "Someone left a debug System.exit in the code.", // @awakenedredstone
+  "You just lost the game", //@basiqueevangelist
 ]
