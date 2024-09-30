@@ -1,5 +1,8 @@
 {
   "title": "Plasmo Voice 2.1",
-  "description": "Soundboard addon for Plasmo Voice requires version 2.1. It's currently only available on [Github Releases](https://github.com/plasmoapp/plasmo-voice/releases/tag/2.1.0-SNAPSHOT).\nOlder versions of Plasmo Voice don't have support for custom addons, so Soundboard won't be backported.",
+  "description": "\
+  Soundboard addon for Plasmo Voice requires version 2.1. \
+  It's currently only available on [Github Releases](https://github.com/plasmoapp/plasmo-voice/releases/tag/2.1.0-SNAPSHOT).\n\
+  Older versions of Plasmo Voice don't have support for custom addons, so Soundboard won't be backported.",
   "color": 0x7d2829,
 }
